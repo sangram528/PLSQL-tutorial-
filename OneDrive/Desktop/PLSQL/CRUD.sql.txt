@@ -1,0 +1,9 @@
+begin 
+execute immediate 'create table emp(
+
+eid number,
+ename varchar2(10)
+)';
+dbms_output.put_line('Table created successfully');
+end;
+/
