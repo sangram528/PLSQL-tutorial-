@@ -1,7 +1,9 @@
-create or replace function Show
-return varchar2
-is 
+create or replace function f_count 
+return number
+is
+v_count number;
 begin 
-return 'Hello world';
+    select count(*) into v_count from employees;
+    return v_count;
 end;
-/ 
+/
